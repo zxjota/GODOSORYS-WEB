@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - GODOSORYS</title>
+    <title>Privacy Policy - TSFPLUS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -363,7 +363,7 @@
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <div class="logo-text">
-                        <h1>GODOSORYS</h1>
+                        <h1>TSFPLUS</h1>
                         <p>Privacy Policy</p>
                     </div>
                 </div>
@@ -404,7 +404,7 @@
             <!-- Privacy Policy Content -->
             <main class="privacy-content">
                 <div class="content-header">
-                    <h1>Privacy Policy for GODOSORYS</h1>
+                    <h1>Privacy Policy for TSFPLUS</h1>
                     <p class="last-updated">Last Updated: January 29, 2026</p>
                 </div>
 
@@ -414,10 +414,10 @@
                         <span class="section-icon"><i class="fas fa-info-circle"></i></span>
                         Introduction
                     </h2>
-                    <p>Welcome to GODOSORYS. This Privacy Policy describes how GODOSORYS ("we", "us", or "our") collects, uses, and shares your personal information when you use our application and services. We are committed to protecting your privacy and ensuring transparency about our data practices.</p>
-                    <p>By accessing or using GODOSORYS, you agree to the collection and use of information in accordance with this policy. The personal data we collect is used to provide, maintain, and improve our services. We will not use or share your information with anyone except as described in this Privacy Policy.</p>
+                    <p>Welcome to TSFPLUS. This Privacy Policy describes how TSFPLUS ("we", "us", or "our") collects, uses, and shares your personal information when you use our application and services. We are committed to protecting your privacy and ensuring transparency about our data practices.</p>
+                    <p>By accessing or using TSFPLUS, you agree to the collection and use of information in accordance with this policy. The personal data we collect is used to provide, maintain, and improve our services. We will not use or share your information with anyone except as described in this Privacy Policy.</p>
                     <div class="highlight-box">
-                        <p><strong>Important:</strong> This privacy policy applies only to GODOSORYS application and its related services. It does not apply to any third-party websites, services, or applications that may be accessed through links within GODOSORYS.</p>
+                        <p><strong>Important:</strong> This privacy policy applies only to TSFPLUS application and its related services. It does not apply to any third-party websites, services, or applications that may be accessed through links within TSFPLUS.</p>
                     </div>
                 </section>
 
@@ -475,7 +475,7 @@
                         <span class="section-icon"><i class="fas fa-cogs"></i></span>
                         How We Use Your Information
                     </h2>
-                    <p>GODOSORYS uses the collected data for the following purposes:</p>
+                    <p>TSFPLUS uses the collected data for the following purposes:</p>
                     <table>
                         <thead>
                             <tr>
@@ -710,7 +710,7 @@
                     </ul>
                     
                     <h3>EU-U.S. Data Privacy Framework</h3>
-                    <p>GODOSORYS complies with the EU-U.S. Data Privacy Framework (EU-U.S. DPF) and the Swiss-U.S. Data Privacy Framework (Swiss-U.S. DPF) as set forth by the U.S. Department of Commerce regarding the collection, use, and retention of personal information transferred from the European Union, United Kingdom, and Switzerland to the United States.</p>
+                    <p>TSFPLUS complies with the EU-U.S. Data Privacy Framework (EU-U.S. DPF) and the Swiss-U.S. Data Privacy Framework (Swiss-U.S. DPF) as set forth by the U.S. Department of Commerce regarding the collection, use, and retention of personal information transferred from the European Union, United Kingdom, and Switzerland to the United States.</p>
                 </section>
 
                 <!-- User Rights Section -->
@@ -919,7 +919,7 @@
                     <div class="highlight-box">
                         <h3>Privacy Contact Information</h3>
                         <p><strong>Email:</strong> <a href="mailto:mukulxxx80@gmail.com">mukulxxx80@gmail.com</a></p>
-                        <p><strong>Application:</strong> GODOSORYS</p>
+                        <p><strong>Application:</strong> TSFPLUS</p>
                         <p><strong>Mailing Address:</strong> [Your Company Address, City, State, ZIP Code]</p>
                         <p><strong>Data Protection Officer:</strong> [Name, if applicable]</p>
                         <p><strong>Effective Date:</strong> January 29, 2026</p>
@@ -943,14 +943,14 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">GODOSORYS</div>
+                <div class="footer-logo">TSFPLUS</div>
                 <p>Your privacy is our priority. We are committed to protecting your personal information.</p>
                 <div class="footer-links">
                     <a href="#introduction">Privacy Policy</a>
                     <a href="#contact">Contact Us</a>
                     <a href="mailto:mukulxxx80@gmail.com">Email Support</a>
                 </div>
-                <p class="copyright">© 2026 GODOSORYS. All rights reserved. | Privacy Policy v2.0</p>
+                <p class="copyright">© 2026 TSFPLUS. All rights reserved. | Privacy Policy v2.0</p>
             </div>
         </div>
     </footer>
@@ -988,7 +988,7 @@
             
             let current = '';
             sections.forEach(section => {
-                    const sectionTop = section.offsetTop;
+                const sectionTop = section.offsetTop;
                 const sectionHeight = section.clientHeight;
                 if(window.scrollY >= (sectionTop - 100)) {
                     current = section.getAttribute('id');
@@ -997,42 +997,11 @@
             
             navLinks.forEach(link => {
                 link.classList.remove('active');
-                if(link.getAttribute('href') === `#${current}`) {
+                if(link.getAttribute('href') === '#' + current) {
                     link.classList.add('active');
                 }
             });
         });
-        
-        // Set current date
-        document.addEventListener('DOMContentLoaded', function() {
-            const now = new Date();
-            const options = { year: 'numeric', month: 'long', day: 'numeric' };
-            const dateString = now.toLocaleDateString('en-US', options);
-            document.querySelector('.last-updated').textContent = `Last Updated: ${dateString}`;
-        });
-        
-        // Print functionality
-        const printButton = document.createElement('button');
-        printButton.innerHTML = '<i class="fas fa-print"></i> Print Policy';
-        printButton.style.cssText = `
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #3498db;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            border-radius: 50px;
-            cursor: pointer;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-            font-weight: 600;
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        `;
-        printButton.addEventListener('click', () => window.print());
-        document.body.appendChild(printButton);
     </script>
 </body>
 </html>
